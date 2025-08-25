@@ -1,0 +1,211 @@
+<!--tags declarando o tipo de documento e a lingua padrão do site. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!--Cabeça do documento contendo metadados e links para estilos. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Vinícius Bettini Dias</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Importando o script JavaScript para adicionar os links interativos da barra de navegação, permitindo navegar e exibir apenas o conteúdo da seção o qual clicou no portfólio. -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Div principal que contém todo o conteúdo do portfólio, criando o efeito de bloco suspenso. -->
+    <div class="containerPortfolio">
+
+        <!-- Cabeçalho do portfólio com o nome e a navegação. -->
+        <header>
+            <div class="conteudoCabecalho">
+                <h1 id="nome"> Vinícius Bettini Dias</h1>
+                <!-- Utilizado a tag nav para os links de navegação. -->
+                <nav>
+                    <!-- Lista não ordenada para os links de navegação. -->
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Utilizado a tag main para o conteúdo principal -->
+        <main>
+
+            <!-- Utilizado a tag section para cada seção do conteúdo do portfólio. -->
+            <section id="sobre" class="secaoConteudo ativa">
+                <!-- Utilizado a tag h2 para o título da seção. -->
+                <h2>Sobre Mim</h2>
+                <!-- Utilizado a tag p para um parágrafo. -->
+                <p class="paragrafoDescritivo">
+                    Olá! Meu nome é Vinícius Bettini Dias. Eu sou um estudante de engenharia de software e
+                    atualmente estou estudante sobre desenvolvimento de aplicações Web e Movéis. Tenho 18 anos e sou apaixonado por tecnologia, arquitetura, natureza e filosofia.
+                    Estou sempre buscando aprender novas habilidades, novas pessoas e aprimorar meu conhecimento em programação Web. Meu objetivo é me tornar um desenvolvedor full-stack,
+                    capaz de criar aplicações completas, inovadoras e visualmente atraentes, que se distaquem do restante do mercado. No meu tempo livre, gosto de aprender novas habilidades e
+                    conhecimento, que possom me ajudar na vida profissional e pessoal. Adoro abservar natureza descutir vários temas nos tempos livres. Neste meu portfólio,
+                    você encontrará alguns dos meus projetos mais recentes e importantes, que refletem minha jornada de aprendizado e meu perfil profissional.
+                </p>
+
+                <!-- Utilizado a tag h3 para subtítulo.s -->
+                <h3>Tecnologias e Ferramentas</h3>
+                <!-- Utilizado a tag h4 para os níveis de proficiência. -->
+                <h4 class="nivelTecnologia">Avançado</h4>
+                <div class="baloesTecnologia">
+                    <!-- Utilizado a tag span para criar balões de itens. -->
+                    <!-- Utilizado a tag i para ícones. -->
+                    <span class="balaoTecnologia"><i class="fa-brands fa-html5"></i> HTML5</span>
+                </div>
+
+                <h4 class="nivelTecnologia">Intermediário</h4>
+                <div class="baloesTecnologia">
+                    <span class="balaoTecnologia"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span class="balaoTecnologia"><i class="fa-brands fa-js"></i> JavaScript</span>
+                </div>
+
+                <h4 class="nivelTecnologia">Básico</h4>
+                <div class="baloesTecnologia">
+                    <span class="balaoTecnologia"><i class="fa-brands fa-git-alt"></i> Git</span>
+                    <span class="balaoTecnologia"><i class="fa-brands fa-github"></i> GitHub</span>
+                    <span class="balaoTecnologia"><i class="fa-brands fa-figma"></i> Figma</span>
+                    <span class="balaoTecnologia"><i class="fa-brands fa-python"></i> Python</span>
+                </div>
+
+                <h3>Áreas de Interesse</h3>
+                <!-- Utilizado a classe para padronizar os estilos dos parágrafos que descrevem algo, como o conteúdo da seção e do tópico. -->
+                <p class="paragrafoDescritivo">
+                    Tenho interesse no Desenvolvimento Full-stack, com foco em criar aplicações completas, com foco em design de interfaces e inovação.
+                    Também sou fascinado por Arquitetura de Software e as melhores práticas para construir sistemas robustos e eficientes.
+                </p>
+
+                <h3>Objetivos de Carreira</h3>
+                <p class="paragrafoDescritivo">
+                   Meu objetivo a curto prazo é conseguir uma oportunidade de estágio ou trainee, onde eu possa aplicar meus conhecimentos e aprender com profissionais experientes.
+                   A longo prazo, aspiro a me tornar um desenvolvedor Sênior ou Engenheiro de Software, liderando equipes na construção de produtos inovadores e de alto impacto com foco na qualidade do produto e no diferencial para o mercado.
+                </p>
+            </section>
+
+            <section id="formacao" class="secaoConteudo">
+                <h2>Formação Acadêmica</h2>
+                <p class="paragrafoDescritivo">Minhas formações, certificações e competências em idiomas.</p>
+
+                <h3 id="formacaoEducacional">Ensino Superior</h3>
+                <ul>
+                    <!-- Utilizado a tag strong para destacar com estilo pré-definido o conteúdo dentro da tag. -->
+                    <li><strong>UNINTER</strong> - Engenharia de Software (2025 - Cursando)</li>
+                </ul>
+                
+                <h3>Cursos e Certificações</h3>
+                <ul>
+                    <li>Certificado em Lógica de Programação - Plataforma Y</li>
+                    <li>Curso de HTML5 - Plataforma X</li>
+                </ul>
+
+                <h3>Idiomas</h3>
+                <ul>
+                    <li><strong>Português:</strong> Nativo</li>
+                    <li><strong>Inglês:</strong> Básico</li>
+                </ul>
+            </section>
+
+            <section id="experiencia" class="secaoConteudo">
+                <h2>Experiências</h2>
+                <p class="paragrafoDescritivo">Aqui apresento alguns dos projetos mais recentes e relevantes nos quais trabalhei.</p>
+
+                <div class="itemExperiencia">
+                    <h3>Site de Calculadora Utilizando HTML5, CSS3 e JavaScript</h3>
+                    <p class="detalhesExperiencia">Projeto Pessoal | 2025</p>
+                    <ul>
+                        <li>Criação de um site de calculadora simples utilizando CSS para estilização e JavaScript para a lógica.</li>
+                        <li>Utilizado Grid Layout para estruturar os botões da calculadora.</li>
+                        <li><strong>Tecnologias:</strong> HTML5, CSS3 e JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="itemExperiencia">
+                    <h3>Site de Jogo da Velha Utilizando HTML5, CSS3 e JavaScript</h3>
+                    <p class="detalhesExperiencia">Projeto Pessoal | 2025</p>
+                    <ul>
+                        <li>Criação de uma página de um jogo popular utilizando JavaScript para a lógica.</li>
+                        <li>Implementado um modo de IA simples.</li>
+                        <li><strong>Tecnologias:</strong> HTML5, CSS3 e JavaScript.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="portfolio" class="secaoConteudo">
+                <h2>Portfólio</h2>
+                <p class="paragrafoDescritivo">Uma seleção dos meus trabalhos. Clique em <strong>Ver Projeto</strong> ou <strong>Ver mais projetos</strong> para mais detalhes.</p>
+
+                <div class="gradePortfolio">
+                    <div class="itemPortfolio">
+                        <h3>Calculadora Simples</h3>
+                        <p>Uma calculadora desenvolvida em JavaScript para praticar lógica de programação e manipulação do DOM.</p>
+                        <!-- utilizado href para o link do repositório do projeto. -->
+                        <!-- Utilizado target="_blank" para abrir o link em uma nova aba. -->
+                        <a href="#" target="_blank">Ver Projeto</a>
+                    </div>
+                    <div class="itemPortfolio">
+                        <h3>Jogo da Velha</h3>
+                        <p>Implementação do clássico Jogo da Velha para aprimorar habilidades em JavaScript e lógica.</p>
+                        <a href="#" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top: 35px;">
+                    <!-- Utilizado a tag button para o botão de ver mais projetos. -->
+                    <!-- Utilizado o type="button" para ser do tipo botão simples. -->
+                    <button type="button" class="btnVerMais">Ver mais projetos</button>
+                </div>
+            </section>
+
+            <section id="contato" class="secaoConteudo">
+                <h2>Contato</h2>
+                <p class="paragrafoDescritivo">Tem alguma dúvida ou uma proposta? Me envie uma mensagem:</p>
+
+                <!-- Utilizado a tag form para o formulário de contato. -->
+                <form id="formularioContato">
+                    <!-- Utilizado a tag label para os rótulos dos campos do formulário. -->
+                    <!-- utilizado o for="nome" para associar o rótulo ao campo de entrada correspondente. -->
+                    <label for="nome">Nome:</label>
+                    <!-- Utilizado a tag input para o campo de inserção. -->
+                    <!-- Utilizado o type="text" para ser um campo de texto simples. -->
+                    <!-- utilizado o name="nome" para identificar o campo no envio das informações do formulário, 
+                     neste caso as informações serão enviadas como "nome". -->
+                    <!-- Utilizado o placeholder para exibir um texto de exemplo no campo. -->
+                    <!-- Utilizado o required para tornar o campo obrigatório. -->
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+
+                    <label for="email">Email:</label>
+                    <!-- Utilizado o type="email" para ser um campo de email, assim, valores inválidos serão rejeitados e
+                     valores utilizados em outros sites no mesmo tipo de campo serão sugeridos. -->
+                    <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <!-- Utilizado a tag textarea para o campo de mensagem. -->
+                    <!-- utilizado o rows="5" para definir a altura em linhas do campo de texto. -->
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+
+                    <!-- Utilizado o type="submit" para o botão de envio do formulário. -->
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="balaoSucesso" class="balaoSucesso" style="display:none;">
+                    <i class="fa-solid fa-circle-check"></i> Mensagem enviada com sucesso!
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé do portfólio, sem conteúdo, apenas um retângulo. -->
+        <footer>
+        </footer>
+
+    </div> 
+</body>
+</html>
